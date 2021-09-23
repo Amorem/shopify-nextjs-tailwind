@@ -18,5 +18,9 @@ export async function getStaticProps({ params }) {
 }
 
 export default function ProductPage({ product }) {
-  return <ProductPageContent product={product} />;
+  return (
+    <div className="min-h-screen py-12 sm:pt-20">
+      <ProductPageContent product={product} />
+    </div>
+  );
 }
