@@ -1,7 +1,12 @@
 import { getProductsInCollection } from "../lib/shopify";
+import ProductList from "../components/ProductList";
 
-export default function Home() {
-  return <div className="text-3xl">Hello from Shopify NextJS</div>;
+export default function Home({ products }) {
+  return (
+    <div className="">
+      <ProductList products={products} />
+    </div>
+  );
 }
 
 export async function getStaticProps() {
