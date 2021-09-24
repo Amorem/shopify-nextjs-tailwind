@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useContext } from "react";
 import { CartContext } from "../context/shopContext";
+import MiniCart from "./MiniCart";
 
 function Nav() {
   const { cart, cartOpen, setCartOpen } = useContext(CartContext);
@@ -16,9 +17,13 @@ function Nav() {
             <span className="pt-1 text-lg font-bold">Shopify + NextJS</span>
           </a>
         </Link>
-        <a className="font-bold cursor-pointer text-md">
+        <a
+          onClick={() => setCartOpen(!cartOpen)}
+          className="font-bold cursor-pointer text-md"
+        >
           Cart ({cartQuantity})
         </a>
+        <MiniCart cart={cart} />
       </div>
     </header>
   );

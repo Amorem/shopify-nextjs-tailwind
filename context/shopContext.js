@@ -29,6 +29,7 @@ export default function shopProvider({ children }) {
         newItem.id,
         newItem.variantQuantity
       );
+
       setCheckoutId(checkout.id);
       setCheckoutUrl(checkout.webUrl);
 
