@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { formater } from "../utils/helpers";
+import { formatter } from "../utils/helpers";
 
 function ProductCard({ product }) {
   const { handle, title } = product.node;
@@ -20,7 +20,7 @@ function ProductCard({ product }) {
           </div>
         </div>
         <h3 className="mt-4 text-lg font-medium text-gray-900">{title}</h3>
-        <p className="mt-1 text-sm text-gray-700">{formater.format(price)}</p>
+        <p className="mt-1 text-sm text-gray-700">{formatter.format(price)}</p>
       </a>
     </Link>
   );
