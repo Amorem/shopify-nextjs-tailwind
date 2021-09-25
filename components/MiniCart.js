@@ -9,7 +9,7 @@ export default function MiniCart({ cart }) {
   const cancelButtonRef = useRef();
   const { cartOpen, setCartOpen, checkoutUrl, removeCartItem } =
     useContext(CartContext);
-  console.log("checkoutUrl", checkoutUrl);
+
   let cartTotal = 0;
   cart.map((item) => {
     cartTotal += item?.variantPrice * item?.variantQuantity;
