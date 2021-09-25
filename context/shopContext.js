@@ -66,6 +66,9 @@ export default function shopProvider({ children }) {
       "checkout_id",
       JSON.stringify([updatedCart, newCheckout])
     );
+    if (cart.length === 1) {
+      setCartOpen(false);
+    }
   }
 
   return (

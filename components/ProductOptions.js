@@ -1,6 +1,6 @@
 function ProductOptions({ name, values, selectedOptions, setOptions }) {
   return (
-    <fieldset>
+    <fieldset className="mt-3 mb-3">
       <legend className="text-xl font-semibold">{name}</legend>
       <div className="inline-flex flex-wrap items-center">
         {values.map((value) => {
