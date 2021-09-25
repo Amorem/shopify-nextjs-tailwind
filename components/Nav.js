@@ -14,7 +14,7 @@ function Nav() {
       <div className="flex items-center justify-between max-w-6xl px-4 pt-4 pb-2 mx-auto lg:max-w-screen-xl">
         <Link href="/" passHref>
           <a className="cursor-pointer">
-            <span className="pt-1 text-lg font-bold">Shopify + NextJS</span>
+            <span className="pt-1 text-lg font-bold">Example Shop</span>
           </a>
         </Link>
         <a
